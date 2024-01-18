@@ -1,0 +1,1 @@
+This directory is for learning APIs in Holberton School.
