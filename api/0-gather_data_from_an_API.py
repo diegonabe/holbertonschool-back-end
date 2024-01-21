@@ -20,9 +20,9 @@ def main():
     response_name = requests.get(url_name)
 
     if response.status_code == 200:
-        todos = response.json()
-        total_tasks = len(todos)
-        completed_tasks = [todo for todo in todos if todo['completed']]
+        to_dos = response.json()
+        total_tasks = len(to_dos)
+        completed_tasks = [to_do for to_do in to_dos if to_do['completed']]
         num_completed_tasks = len(completed_tasks)
     else:
         print("Error fetching TODO list")
